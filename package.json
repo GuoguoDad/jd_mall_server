@@ -1,9 +1,10 @@
 {
-  "name": "mock",
+  "name": "jd_mall_server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "",
     "mock": "mock-server --watch --port 8091 --api-base-path ./api"
   },
   "devDependencies": {
