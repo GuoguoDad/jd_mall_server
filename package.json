@@ -1,13 +1,26 @@
 {
   "name": "jd_mall_server",
   "version": "1.0.0",
+  "module": "",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "",
-    "mock": "mock-server --watch --port 8091 --api-base-path ./api"
+    "start": "node index.js"
   },
-  "devDependencies": {
-    "webpack-plugin-mock": "^1.1.1"
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "@vercel/node": "^2.15.4",
+    "child_process": "^1.0.2",
+    "chokidar": "^3.5.3",
+    "json5": "^2.2.3",
+    "junk": "^3.1.0",
+    "klaw": "^4.1.0",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-json": "^2.0.2",
+    "koa-router": "^12.0.0",
+    "koa-safe-jsonp": "^1.0.0",
+    "mockjs-lite": "^0.3.3",
+    "path": "^0.12.7",
+    "upath": "^2.0.1"
   }
 }
