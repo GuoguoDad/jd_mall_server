@@ -1166,6 +1166,18 @@ exports.queryMineInfo = {
 }
 
 
+exports.loginResponse = {
+  "code": "0",
+  "msg": null,
+  "data": {
+    "token": "4e7ef310565641f6278dab3be8ced53d",
+    "userName": "GuoguoDad",
+    "headerImg": "https://ik.imagekit.io/guoguodad/mall/header.jpg",
+    "integral": 200,
+    "creditValue": 1200,
+    "userId": "5d65471edf4cdfe815bbf5d8b451b642"
+  }
+}
 
 
 

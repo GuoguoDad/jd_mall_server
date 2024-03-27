@@ -4,7 +4,7 @@ const Router = require('@koa/router');
 const jsonp = require('koa-safe-jsonp')
 const mock = require('mockjs-lite')
 const {queryCartGoodsList, queryMaybeLikeList, categoryList, queryContentByCategory, queryGoodsListByPage,
-  queryGoodsDetail, queryStoreGoodsList, queryHomePageInfo, queryMineInfo
+  queryGoodsDetail, queryStoreGoodsList, queryHomePageInfo, queryMineInfo, loginResponse
 } = require('./map')
 
 async function boot() {
@@ -70,6 +70,13 @@ async function boot() {
       ctx.jsonp = mock.mock(queryMineInfo)
     }
   )
+
+  router.all('/common/login',
+    (ctx) => {
+      ctx.jsonp = mock.mock(loginResponse)
+    }
+  )
+
 
   app.use(
     koaBody({
